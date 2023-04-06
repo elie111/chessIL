@@ -4,11 +4,19 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/chesslogo_round"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/chesslogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChessIL">
+        <activity
+            android:name=".ChessBoard"
+            android:exported="false"
+            android:label="@string/title_activity_chess_board"
+            android:theme="@style/Theme.ChessIL.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
